@@ -21,3 +21,13 @@ eventForm.addEventListener('submit', function(event) {
     event.preventDefault();
     formSubmitMessage.textContent = 'Form has been submitted'
 });
+
+//Focus and Blur Event
+const focusBlurInput = document.getElementById('focusBlurInput');
+const focusBlurMessage = document.getElementById('focusBlurMessage');
+focusBlurInput.addEventListener('focus', function() {
+    focusBlurMessage.textContent = 'Input field is focused';
+});
+focusBlurInput.addEventListener('blur', function() {
+    focusBlurMessage.textContent = 'Input field is blurred';
+});
