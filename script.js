@@ -13,3 +13,11 @@ const keyPressedMessage = document.getElementById('keyPressedMessage');
 keyboardInput.addEventListener('keydown', function(event) {
     keyPressedMessage.textContent = `You just pressed the ${event.key} key`;
 });
+
+// Form Event
+const eventForm = document.getElementById('eventForm');
+const formSubmitMessage = document.getElementById('formSubmitMessage');
+eventForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    formSubmitMessage.textContent = 'Form has been submitted'
+});
