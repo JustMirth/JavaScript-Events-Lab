@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    background-color: wheat;
+}
+h1, h2 {
+    text-decoration: underline;
+}
+.eventSection {
+    border-top: 1px solid black;
+    margin: 10px;
+    padding: 5px;
+}
+.buttonContainer {
+    display: inline-flex;
+    gap: 20px;
+}
