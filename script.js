@@ -31,3 +31,12 @@ focusBlurInput.addEventListener('focus', function() {
 focusBlurInput.addEventListener('blur', function() {
     focusBlurMessage.textContent = 'Input field is blurred';
 });
+
+//Event Delegation
+const delegatedButtonContainer = document.getElementById('delegatedButtonContainer');
+const delegatedButtonMessage = document.getElementById('delegatedButtonMessage');
+delegatedButtonContainer.addEventListener('click', function(event) {
+    if (event.target && event.target.matches('button.delegatedButton')) {
+        delegatedButtonMessage.textContent = `You clicked button ${event.target.textContent}`;
+    }
+});
